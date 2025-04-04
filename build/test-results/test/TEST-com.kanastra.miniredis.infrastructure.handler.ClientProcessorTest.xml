@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.infrastructure.handler.ClientProcessorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:25" hostname="mark-1.local" time="0.139">
+  <properties/>
+  <testcase name="handleClient handles IOException()" classname="com.kanastra.miniredis.infrastructure.handler.ClientProcessorTest" time="0.129"/>
+  <testcase name="handleClient handles exception during message processing()" classname="com.kanastra.miniredis.infrastructure.handler.ClientProcessorTest" time="0.005"/>
+  <testcase name="handleClient processes valid message and sends response()" classname="com.kanastra.miniredis.infrastructure.handler.ClientProcessorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor run
+SEVERE: IOException occurred while handling client InetAddress(child of #13#19): Underlying input stream returned zero bytes
+Exception in thread "pool-6-thread-1" io.mockk.MockKException: no answer found for ProtocolHandler(#12).handleException(java.io.IOException: Underlying input stream returned zero bytes) among the configured answers: ()
+	at io.mockk.impl.stub.MockKStub.defaultAnswer(MockKStub.kt:93)
+	at io.mockk.impl.stub.MockKStub.answer(MockKStub.kt:44)
+	at io.mockk.impl.recording.states.AnsweringState.call(AnsweringState.kt:16)
+	at io.mockk.impl.recording.CommonCallRecorder.call(CommonCallRecorder.kt:53)
+	at io.mockk.impl.stub.MockKStub.handleInvocation(MockKStub.kt:271)
+	at io.mockk.impl.instantiation.JvmMockFactoryHelper$mockHandler$1.invocation(JvmMockFactoryHelper.kt:24)
+	at io.mockk.proxy.jvm.advice.Interceptor.call(Interceptor.kt:21)
+	at io.mockk.proxy.jvm.advice.BaseAdvice.handle(BaseAdvice.kt:42)
+	at io.mockk.proxy.jvm.advice.jvm.JvmMockKProxyInterceptor.interceptNoSuper(JvmMockKProxyInterceptor.java:44)
+	at com.kanastra.miniredis.application.ProtocolHandler$Subclass0.handleException(Unknown Source)
+	at com.kanastra.miniredis.infrastructure.handler.ClientProcessor.run(ClientProcessor.kt:29)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor run
+SEVERE: IOException occurred while handling client Mock for InetAddress, hashCode: 1769605448: Test IOException
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Received message from Mock for InetAddress, hashCode: 382788897: TEST
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+SEVERE: Error processing command from Mock for InetAddress, hashCode: 382788897: Test Exception
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Received message from Mock for InetAddress, hashCode: 185906698: TEST
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Sent response to Mock for InetAddress, hashCode: 185906698: OK
+]]></system-err>
+</testsuite>

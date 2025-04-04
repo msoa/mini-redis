@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.domain.command.StringCommandTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:09" hostname="mark-1.local" time="0.021">
+  <properties/>
+  <testcase name="execute SET with valid arguments()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.003"/>
+  <testcase name="execute SET with GET flag()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute GET with valid arguments()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.001"/>
+  <testcase name="execute SET with NX flag and key does not exist()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute SET with XX flag and key does not exist()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute GET with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute SET with NX flag and key exists()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute unknown command()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute SET with XX flag and key exists()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.002"/>
+  <testcase name="execute SET with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.StringCommandTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

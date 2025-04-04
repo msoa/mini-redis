@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:09" hostname="mark-1.local" time="0.036">
+  <properties/>
+  <testcase name="handleException()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.006"/>
+  <testcase name="handleMessage with invalid number of arguments()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <testcase name="handleMessage with SET command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <testcase name="handleMessage with EXPIRE command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.003"/>
+  <testcase name="handleMessage with GET command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.001"/>
+  <testcase name="handleMessage with generic exception()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <testcase name="handleMessage with TTL command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.001"/>
+  <testcase name="handleMessage with unknown command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <testcase name="handleMessage with IllegalArgumentException()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <testcase name="handleMessage with LPUSH command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.009"/>
+  <testcase name="handleMessage with LRANGE command()" classname="com.kanastra.miniredis.domain.redis.RedisProtocolHandlerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
