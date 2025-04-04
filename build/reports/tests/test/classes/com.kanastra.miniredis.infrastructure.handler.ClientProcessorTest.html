@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ClientProcessorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ClientProcessorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.kanastra.miniredis.infrastructure.handler.html">com.kanastra.miniredis.infrastructure.handler</a> &gt; ClientProcessorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.138s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">handleClient handles IOException()</td>
+<td class="success">0.129s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleClient handles exception during message processing()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleClient processes valid message and sends response()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor run
+SEVERE: IOException occurred while handling client InetAddress(child of #13#19): Underlying input stream returned zero bytes
+Exception in thread &quot;pool-6-thread-1&quot; io.mockk.MockKException: no answer found for ProtocolHandler(#12).handleException(java.io.IOException: Underlying input stream returned zero bytes) among the configured answers: ()
+	at io.mockk.impl.stub.MockKStub.defaultAnswer(MockKStub.kt:93)
+	at io.mockk.impl.stub.MockKStub.answer(MockKStub.kt:44)
+	at io.mockk.impl.recording.states.AnsweringState.call(AnsweringState.kt:16)
+	at io.mockk.impl.recording.CommonCallRecorder.call(CommonCallRecorder.kt:53)
+	at io.mockk.impl.stub.MockKStub.handleInvocation(MockKStub.kt:271)
+	at io.mockk.impl.instantiation.JvmMockFactoryHelper$mockHandler$1.invocation(JvmMockFactoryHelper.kt:24)
+	at io.mockk.proxy.jvm.advice.Interceptor.call(Interceptor.kt:21)
+	at io.mockk.proxy.jvm.advice.BaseAdvice.handle(BaseAdvice.kt:42)
+	at io.mockk.proxy.jvm.advice.jvm.JvmMockKProxyInterceptor.interceptNoSuper(JvmMockKProxyInterceptor.java:44)
+	at com.kanastra.miniredis.application.ProtocolHandler$Subclass0.handleException(Unknown Source)
+	at com.kanastra.miniredis.infrastructure.handler.ClientProcessor.run(ClientProcessor.kt:29)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor run
+SEVERE: IOException occurred while handling client Mock for InetAddress, hashCode: 1769605448: Test IOException
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Received message from Mock for InetAddress, hashCode: 382788897: TEST
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+SEVERE: Error processing command from Mock for InetAddress, hashCode: 382788897: Test Exception
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Received message from Mock for InetAddress, hashCode: 185906698: TEST
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientProcessor handleClient
+INFO: Sent response to Mock for InetAddress, hashCode: 185906698: OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at Apr 4, 2025, 10:31:26 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.domain.command.ExpireCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:09" hostname="mark-1.local" time="0.411">
+  <properties/>
+  <testcase name="execute EXPIRE with invalid ttl()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.381"/>
+  <testcase name="execute TTL with valid arguments()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.006"/>
+  <testcase name="execute EXPIRE with valid arguments()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.004"/>
+  <testcase name="execute TTL with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.002"/>
+  <testcase name="execute EXPIRE with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.012"/>
+  <testcase name="execute unknown command()" classname="com.kanastra.miniredis.domain.command.ExpireCommandTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.domain.command.ListCommandTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:09" hostname="mark-1.local" time="0.041">
+  <properties/>
+  <testcase name="execute RPOP with valid arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.003"/>
+  <testcase name="execute RPUSH with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.001"/>
+  <testcase name="execute RPOP with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.001"/>
+  <testcase name="execute RPOP with default count()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LRANGE with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LPOP with default count()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LRANGE with invalid start()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute unknown command()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.003"/>
+  <testcase name="execute LPUSH with valid arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute RPUSH with valid arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LRANGE with valid arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LPOP with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <testcase name="execute LPUSH with invalid number of arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.001"/>
+  <testcase name="execute LRANGE with invalid end()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.001"/>
+  <testcase name="execute LPOP with valid arguments()" classname="com.kanastra.miniredis.domain.command.ListCommandTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

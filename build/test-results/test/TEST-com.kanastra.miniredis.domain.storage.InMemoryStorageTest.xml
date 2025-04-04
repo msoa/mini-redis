@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:23" hostname="mark-1.local" time="1.535">
+  <properties/>
+  <testcase name="leftPush and leftPop list()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="0.017"/>
+  <testcase name="leftRange list()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="0.001"/>
+  <testcase name="rightPush and rightPop list()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="0.002"/>
+  <testcase name="save and get string()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="0.001"/>
+  <testcase name="exists return true when key exists and false when not()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="0.002"/>
+  <testcase name="cleanupExpiredKeys removes expired keys()" classname="com.kanastra.miniredis.domain.storage.InMemoryStorageTest" time="1.507"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

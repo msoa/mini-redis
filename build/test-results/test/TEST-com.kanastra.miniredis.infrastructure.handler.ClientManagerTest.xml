@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-04-04T13:31:25" hostname="mark-1.local" time="0.353">
+  <properties/>
+  <testcase name="stop does not shutdown pool if already shutdown()" classname="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" time="0.14"/>
+  <testcase name="handleClient closes socket when not running()" classname="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" time="0.095"/>
+  <testcase name="stop sets running to false and shuts down the thread pool()" classname="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" time="0.002"/>
+  <testcase name="handleClient submits ClientProcessor to the thread pool when running()" classname="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" time="0.109"/>
+  <testcase name="start sets running to true and logs info()" classname="com.kanastra.miniredis.infrastructure.handler.ClientManagerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager start
+INFO: Client Manager started
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager stop
+INFO: Client Manager stopped
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager handleClient
+INFO: Client Manager is not running, cannot handle client.
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager start
+INFO: Client Manager started
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager stop
+INFO: Client Manager stopped
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager start
+INFO: Client Manager started
+Apr 04, 2025 10:31:25 AM com.kanastra.miniredis.infrastructure.handler.ClientManager start
+INFO: Client Manager started
+]]></system-err>
+</testsuite>
